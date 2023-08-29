@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import BannerImg from "../../assets/banner/banner1.png";
-import theme from "../../Theme";
 
 export default function Banner() {
   return (
@@ -26,7 +25,7 @@ export default function Banner() {
           padding={1}
           marginTop={3}
           sx={{
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: '#E03c31',
             borderRadius: 10,
             color: "#fff",
             left:-50,

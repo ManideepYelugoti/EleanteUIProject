@@ -20,7 +20,8 @@ import Contact from "./Components/Contact";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
+    <>
       <TopNavigation />
       <Header />
       <MainNavigation />
@@ -89,7 +90,8 @@ function App() {
 
       </Box>
       <Footer/>
-    </ThemeProvider>
+    {/* // </ThemeProvider> */}
+    </>
   );
 }
 
