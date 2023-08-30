@@ -8,7 +8,7 @@ export default function Banner() {
       <Grid container mt={2} mb={2}>
         <Grid item xs={12} md={6}>
           <Box
-            flexBasis={"40%"}
+            flexBasis={"50%"}
             display={"flex"}
             flexDirection={"column"}
             justifyContent={"center"}
