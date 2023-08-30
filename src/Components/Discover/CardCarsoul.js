@@ -1,30 +1,13 @@
 import React, { useRef } from "react";
 import { Box } from "@mui/material";
-import { specialOfferData } from "./data";
 import Card from "./Card";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import LeftCarusoalButton from "../CarsoulControlButtons/LeftCarusolButton";
+import RightCarusoalButton from "../CarsoulControlButtons/RightCarusoalButton";
 
-export default function CardCarsoul({radius,data,subtitleboldFlag}) {
+export default function CardCarsoul({radius,data,subtitleboldFlag, carousalButtonsControlFlag}) {
+  console.log(radius);
   const carouselRef = useRef(null);
 
-  const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({
-        left: -200, // Adjust the value based on your card width
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({
-        left: 200, // Adjust the value based on your card width
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <Box
@@ -35,22 +18,17 @@ export default function CardCarsoul({radius,data,subtitleboldFlag}) {
       marginX={4}
       paddingX={10}
     >
-      <Box
-        sx={{ borderRadius: 5, border: "2px solid black", cursor: "pointer" }}
-        display={"flex"}
-        alignItems={"center"}
-        onClick={scrollLeft}
-      >
-        <ArrowBackIcon />
-      </Box>
+
+
+{  carousalButtonsControlFlag &&  <LeftCarusoalButton carouselRef={carouselRef} />}
 
       <Box
         ref={carouselRef}
         width={"100%"}
         display={"flex"}
-        marginX={21}
+        marginX={5}
         gap={2}
-        justifyContent={ "center"}
+        
         sx={{
           overflowX: "hidden",
           
@@ -70,14 +48,8 @@ export default function CardCarsoul({radius,data,subtitleboldFlag}) {
         ))}
       </Box>
 
-      <Box
-        sx={{ borderRadius: 5, border: "2px solid black", cursor: "pointer" }}
-        display={"flex"}
-        alignItems={"center"}
-        onClick={scrollRight}
-      >
-        <ArrowForwardIcon />
-      </Box>
+   
+     {carousalButtonsControlFlag && <RightCarusoalButton carouselRef={carouselRef} />}
     </Box>
   );
 }
