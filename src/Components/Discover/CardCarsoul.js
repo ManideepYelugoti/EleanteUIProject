@@ -48,9 +48,9 @@ export default function CardCarsoul({radius,data,subtitleboldFlag}) {
         ref={carouselRef}
         width={"100%"}
         display={"flex"}
-        marginX={5}
-        gap={8}
-        justifyContent={ "space-around"}
+        marginX={21}
+        gap={2}
+        justifyContent={ "center"}
         sx={{
           overflowX: "hidden",
           

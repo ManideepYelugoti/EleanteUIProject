@@ -54,6 +54,11 @@ export default function Contact() {
             </ul>
 
         </Box>
+        <Box>
+            <Typography variant='subtitle2'>Subscribe to our newsletter</Typography>
+           
+
+        </Box>
     </Box>
   )
 }
