@@ -14,7 +14,7 @@ export default function CollectionBanner() {
             {
                 matches ?
 
-                    <Box display={'flex'}  alignItems={'center'} marginTop={10}   >
+                    <Box display={'flex'}  alignItems={'center'} marginTop={10}  >
                        
                         
                         <Box display={'flex'} flexDirection={'column'} gap={3} justifyContent={'center'} marginX={18}>

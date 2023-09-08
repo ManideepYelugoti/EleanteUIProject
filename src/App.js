@@ -40,12 +40,14 @@ function App() {
         data={specialOfferData}
       />
 
-    
+       <Box marginX={{lg:6}}>
       <ProductComponent
         data={hairProductData}
         imgWidth={'100%'}
         imgHeight={'100%'}
       />
+
+       </Box>
      
       <Shop
         flexdirection={"column"}
