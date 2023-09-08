@@ -27,7 +27,6 @@ function App() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('md'));
   return (
-    // <ThemeProvider theme={theme}>
     <Box width={'100%'} >
       <TopNavigation />
       <Header />
@@ -83,7 +82,6 @@ function App() {
 
       </Box>
       <Footer/>
-    {/* // </ThemeProvider> */}
     </Box>
   );
 }
