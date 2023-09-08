@@ -47,7 +47,7 @@ export default function Banner() {
             <img
               src={BannerImg}
               alt="banner"
-              height={"100%"}
+              height={"80%"}
               width={"100%"}
               style={{ maxWidth: '100%' }}
             />

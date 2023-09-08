@@ -12,7 +12,7 @@ export default function HariProductCard({ imgSrc, title, subtitle,imgHeight,imgW
   return (
     <>
    { matches ? <Box display={"flex"} flexDirection={"column"} gap={2} padding={1}>
-      <img src={imgSrc} alt={title} width={'350px'} height={'300px'} />
+      <img src={imgSrc} alt={title} width={imgHeight} height={imgWidth} />
       <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
         {title}
       </Typography>

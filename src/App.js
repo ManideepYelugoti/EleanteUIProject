@@ -43,6 +43,8 @@ function App() {
     
       <ProductComponent
         data={hairProductData}
+        imgWidth={'100%'}
+        imgHeight={'100%'}
       />
      
       <Shop
@@ -58,8 +60,8 @@ function App() {
       <ProductComponent
         data={productData}
         flexbasis={"28%"}
-        imgWidth={"300px"}
-        imgHeight={"450px"}
+        imgWidth={"350px"}
+        imgHeight={"300px"}
         gap={1}
       />
       <CarousalComponent

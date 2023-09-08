@@ -29,7 +29,7 @@ export default function CollectionBanner() {
       backgroundSize: '5px 4px',
     }}></Box>
                             <Typography variant='h4' sx={{fontWeight:900}}>Lorem ipsum dolor sit amet, consetetur</Typography>
-                            <Typography variant='overline' sx={{fontWeight:550}} >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</Typography>
+                            <Typography variant='caption' sx={{fontWeight:500}} >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</Typography>
                             <Box sx={{border:'2px solid black',borderRadius:5}} paddingX={5} paddingY={1} alignSelf={'flex-start'}>
                             <Typography  variant='button' >FIND OUT MORE</Typography>
                         </Box>
