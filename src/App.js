@@ -33,7 +33,10 @@ function App() {
      {matches && <MainNavigation />}
       <Discount />
       <Banner />
+      <Box marginTop={12}>
+
       <Trending />
+      </Box>
       <CarousalComponent
         header={"Discover"}
         navflag={true}
