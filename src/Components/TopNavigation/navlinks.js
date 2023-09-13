@@ -9,7 +9,7 @@ export const navlinks =[
     },
     {
         id:2,
-        link:'TSalon'
+        link:'Salon'
     },
     {
         id:3,

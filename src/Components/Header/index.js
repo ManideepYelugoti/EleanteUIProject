@@ -17,21 +17,22 @@ export default function Header() {
     <>
       {
         matches ?  <Box display={"flex"} flexDirection={'column'}  marginX={4}>
-        <Box display={"flex"} alignItems={"center"}justifyContent={'space-around'} padding={2} flexWrap={'wrap'} >
-          <img src={Logo} alt="logo" />
+        <Box display={"flex"} alignItems={"center"}justifyContent={'space-around'} padding={2} flexWrap={'wrap'} gap={6} >
+          <img src={Logo} alt="logo" width={'10%'} height={'10%'} />
           <Box
             sx={{
               backgroundColor:'#1018200D',
               borderRadius: 5,
               borderColor: '#1018200D',
+              cursor:'text'
             }}
             display={'flex'}
             alignItems={'center'}
             justifyContent={'flex-end'}
-            width={"35%"}
-            height={"5vh"}
+            width={"38%"}
+            height={"7vh"}
           >
-            <input style={{width:'80%',border:'none',backgroundColor:'#1018200D'}} />
+            {/* <input style={{width:'80%',border:'none',backgroundColor:'#1018200D'}} /> */}
             <SearchIcon  sx={{padding:1}} />
           </Box>
           <Box display={'flex'} gap={2}>
@@ -44,7 +45,7 @@ export default function Header() {
            <ShoppingBagOutlinedIcon sx={{position:'absolute'}} />
            <Box sx={{position:'relative',bottom:-7,right:-10}}>
     
-           <Box sx={{borderRadius:5,backgroundColor:'#FFAA4D',color:'#fff',left:-2}} margin={0.3} padding={0.1} component={Typography} variant="overline" >10</Box>
+           <Box sx={{borderRadius:5,backgroundColor:'#FFAA4D',color:'#fff',left:-2}} margin={0.3} padding={0.1} component={Typography} variant="overline" >12</Box>
            </Box>
     
            </Box>

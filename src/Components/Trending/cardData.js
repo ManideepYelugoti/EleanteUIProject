@@ -12,13 +12,13 @@ export const cardData =[
     {
         id:1,
         imgSrc:image2,
-        title:'Trend setting makeup',
+        title:'New makeup brushes',
         subtitle:'Lorem ipsum dolor sit amet, consetetur'
     },
     {
         id:2,
         imgSrc:image3,
-        title:'Trend setting makeup',
+        title:'This seasons hottest nail polish',
         subtitle:'Lorem ipsum dolor sit amet, consetetur'
     },
     

@@ -4,7 +4,7 @@ import { topnavlinks } from "../Header/topnavlinks";
 
 export default function MainNavigation() {
   return (
-    <Box padding={4} display={'flex'} justifyContent={'center'}>
+    <Box padding={3} display={'flex'} marginLeft={18} >
       <Box>
       <Grid
   
@@ -14,7 +14,7 @@ export default function MainNavigation() {
    {topnavlinks.map((navlink) => (
      <Grid item  key={navlink.id}> <Typography
     
-     variant="subtitle1"
+     variant="overline"
      component={Link}
      sx={{
        color: '#101820',
